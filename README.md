@@ -16,8 +16,10 @@ An open-source utility that resolves gamepad input issues and engine crashes on 
 
 ## Quick Start (No Terminal Required)
 
-1. Download **`Lovers-Fix-macOS.zip`** from the [Releases](../../releases) section.
+1. Download **`Lovers-Fix-macOS.zip`** from the [Releases](https://github.com/Ranamzes/lovers-macos-gamepad-fix/releases) page *(do **not** use "Code → Download ZIP", as it may strip executable permissions)*.
 2. Unzip and double-click **`Lovers Fix.app`**.
+   > **Gatekeeper Notice:** Since this tool uses an ad-hoc signature rather than a paid Apple Developer ID, macOS may block the first launch (*"Apple cannot check it for malicious software"*).  
+   > To allow it: open **System Settings → Privacy & Security** and click **Open Anyway** (or run `xattr -cr "Lovers Fix.app"` in Terminal).
 3. In the window that appears, click **Apply Fix**.
 4. Configure Steam Input:
    - In Steam, open **Settings** → **Controller**.
@@ -49,7 +51,7 @@ You can restore your game files at any time:
 Requirements: macOS with Apple Clang (`clang`).
 
 ```bash
-git clone https://github.com/<your-username>/lovers-macos-gamepad-fix.git
+git clone https://github.com/Ranamzes/lovers-macos-gamepad-fix.git
 cd lovers-macos-gamepad-fix
 make
 ```
